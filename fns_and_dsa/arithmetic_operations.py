@@ -1,6 +1,6 @@
 from arithmetic_operations import perform_operation
 
-def main():
+def perform_operation():
     print("Arithmetic Operations")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
@@ -10,4 +10,4 @@ def main():
     print(f"Result: {result}")
 
 if __name__ == "__main__":
-    main()
+    perform_operation()
