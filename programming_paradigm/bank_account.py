@@ -10,8 +10,8 @@ class BankAccount:
         if 0 < amount <= self.__account_balance:
             self.__account_balance -= amount
             return True
-        else:
-            return False
+        return False
 
     def display_balance(self):
-        print(f"Current balance: ${self.__account_balance:.2f}")
+        # Contains the exact phrase required
+        print(f"Current Balance: ${self.__account_balance:.2f}")
