@@ -32,3 +32,10 @@ class Library:
             if book.title == title:
                 if book.check_out():
                     print(f"'{title}' has been checked out.")
+    def list_available_books(self):
+            available_books = [book for book in self._books if book.is_available()]
+            if not available_books:
+                print("No books available.")
+            else:
+                for book in available_books:
+                    print(f"{book.title} by {book.author}")
